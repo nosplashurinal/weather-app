@@ -1,0 +1,15 @@
+@import "./constants.scss";
+
+.recent-searches {
+  position: absolute;
+  font-family: $font-primary;
+  background-color: rgba(#fff;
+  padding: 0;
+  width: 100%;
+  margin-top: 8px;
+  .list {
+    > li {
+      padding: 0.5em 0;
+    }
+  }
+}

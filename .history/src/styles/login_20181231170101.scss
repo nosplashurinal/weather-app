@@ -1,0 +1,92 @@
+@import "./constants.scss";
+
+.login {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background: rgba(#f2f2f2, 0.75);
+  border-radius: 3px;
+  font-family: "Lato", sans-serif;
+  padding: 0 1em;
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    p {
+      color: #434343;
+      position: relative;
+      font-size: 1.5em;
+      padding: 0.5em 0;
+      margin-bottom: 0.5em;
+      flex: none;
+      width: auto;
+    }
+    input {
+      color: #434343;
+      background: transparent;
+      border: 0;
+      display: block;
+      border-bottom: 1px solid #434343;
+      font-size: 2.5em;
+      font-weight: 300;
+      margin: 0;
+      width: 500px;
+      height: auto;
+      padding: 0;
+      padding: 0.3em 0;
+      margin-bottom: 1em;
+      position: relative;
+      &::focus {
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid #434343;
+        outline: none;
+        box-shadow: none;
+      }
+      ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #434343;
+      }
+      ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #434343;
+      }
+    }
+    .button-container {
+      flex: none;
+      position: relative;
+      display: flex;
+      > {
+        padding: 1em;
+        margin: 0;
+      }
+      .login {
+        background: $blue;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        cursor: pointer;
+        width: auto;
+        position: relative;
+        flex: none;
+      }
+      .register-button {
+        flex: none;
+        margin-left: 1em;
+        background: none;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 350ms ease-in-out;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+}

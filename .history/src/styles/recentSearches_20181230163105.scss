@@ -1,0 +1,13 @@
+@import "./constants.scss";
+
+.recent-searches {
+  position: absolute;
+  font-family: $font-primary;
+  background-color: #fff;
+  .list {
+    padding: 0 0.25em;
+    > li {
+      padding: 0.5em 0;
+    }
+  }
+}

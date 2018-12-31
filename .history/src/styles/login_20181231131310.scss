@@ -1,0 +1,75 @@
+@import "./constants.scss";
+
+.login {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background: rgba(#f2f2f2, 0.75);
+  border-radius: 3px;
+  font-family: "Lato", sans-serif;
+  padding: 0 1em;
+  display: flex;
+  flex-wrap: wrap;
+  p {
+    color: #434343;
+    position: relative;
+    font-size: 1.5em;
+    padding: 0.5em 0;
+    margin-bottom: 0.5em;
+    flex: none;
+    width: 100%;
+  }
+  .login-container {
+    position: relative;
+    padding: 0 0.25em;
+    flex: none;
+    width: calc(100% - 0.5em);
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #434343;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #434343;
+    }
+    input {
+      color: #434343;
+      background: transparent;
+      border: 0;
+      display: block;
+      border-bottom: 1px solid #434343;
+      font-size: 2.5em;
+      font-weight: 300;
+      margin: 0;
+      width: 100%;
+      height: auto;
+      padding: 0;
+      padding: 0.3em 0;
+      margin-bottom: 1em;
+      &::focus {
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid #434343;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .login {
+    background: $blue;
+    color: #fff;
+    padding: 0.75em;
+    margin-right: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    flex: none;
+    width: auto;
+    margin-left: auto;
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 350ms ease-in-out;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+}

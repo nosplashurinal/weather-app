@@ -1,0 +1,43 @@
+@import "./constants.scss";
+
+.recent-searches {
+  position: absolute;
+  font-family: $font-primary;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0;
+  width: 100%;
+  margin-top: 4px;
+  border-radius: 3px;
+  z-index: 10;
+  p {
+    font-size: 1.25em;
+    color: #a2a2a2;
+    line-height: 2em;
+    padding: 0 0.75em;
+    border-bottom: 1px solid #fff;
+  }
+  .list {
+    margin: 0;
+    padding: 0;
+    > li {
+      padding: 0.75em 1.5em;
+      font-size: 1em;
+      line-height: 1.5em;
+      color: #434343;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(#a2a2a2, 0.45); 
+      }
+    }
+  }
+}
+.resultActive .recent-searches {
+  background-color: rgba(43, 43, 43, 1);
+  p {
+    border-bottom: 1px solid rgba(#a2a2a2, 0.5);
+  }
+  .list > li {
+    border: none;
+    color: #a2a2a2;
+  }
+}

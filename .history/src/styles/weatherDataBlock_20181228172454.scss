@@ -1,0 +1,72 @@
+@import "./constants.scss";
+
+.weather-data-block {
+  background: #fff;
+  border: 1px solid #d2d2d2;
+  padding: 12px;
+  -webkit-font-smoothing: antialiased;
+  .time-city {
+    flex: 0 0 100%;
+    text-align: left;
+    font-family: $font-primary;
+    padding: 0.5em 0;
+    font-size: 14px;
+    color: #434343;
+    .time {
+      padding-bottom: 8px;
+    }
+    .city {
+      padding-bottom: 8px;
+    }
+  }
+  .main-block {
+    border: 1px solid #ccc;
+    flex: 0 1 auto;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .weather-icon {
+      flex: none;
+      width: 50px;
+      height: 50px;
+      padding: 1em;
+    }
+    .weather-info {
+      flex: 0 1 100%;
+      text-align: left;
+      .temperature-block {
+        display: flex;
+        > span {
+          font-size: 1.5em;
+          color: #a2a2a2;
+        }
+        > span:first-child {
+          font-size: 4em;
+          color: #434343;
+        }
+        i {
+          width: 2px;
+          height: 20px;
+          background-color: #a2a2a2;
+          display: inline-block;
+          margin: 0 6px;
+        }
+      }
+      .description {
+        font-size: 1em;
+        color: #434343;
+      }
+    }
+  }
+  .other-block {
+    flex: none;
+    text-align: right;
+    color: #a2a2a2;
+    p {
+      padding-top: 8px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "./constants.scss";
+
+.registration {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background: rgba($blue, 0.85);
+  font-family: "Lato", sans-serif;
+  p {
+    color: #fff;
+    position: relative;
+    font-size: 1.5em;
+    padding: 1em 0.5em;
+  }
+  .fields-container {
+    position: relative;
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #fff;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #fff;
+    }
+    input {
+      color: #fff;
+      background: transparent;
+      border: 0;
+      font-size: 3em;
+      font-weight: 300;
+      margin: 0;
+      width: auto;
+      height: auto;
+      padding: 0.3em;
+      padding-left: 1em;
+      &::focus {
+        background: transparent;
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}

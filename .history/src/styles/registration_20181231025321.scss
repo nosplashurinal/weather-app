@@ -1,0 +1,51 @@
+@import "./constants.scss";
+
+.registration {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background: rgba(#f2f2f2, 0.75);
+  border-radius: 3px;
+  font-family: "Lato", sans-serif;
+  padding: 0 1em;
+  p {
+    color: #434343;
+    position: relative;
+    font-size: 1.5em;
+    padding: 1em 0;
+  }
+  .fields-container {
+    position: relative;
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #434343;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #434343;
+    }
+    input {
+      color: #434343;
+      background: transparent;
+      border: 0;
+      font-size: 3em;
+      font-weight: 300;
+      margin: 0;
+      width: auto;
+      height: auto;
+      padding: 0.3em 0;
+      &::focus {
+        background: transparent;
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .next {
+    background: $blue;
+    color: #fff;
+    padding: 0.2em;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}
